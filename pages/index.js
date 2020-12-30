@@ -16,30 +16,30 @@ export default function Home() {
           <p className={styles.description}>内閣府所管企業主導型保育園</p>
 
           <div className={styles.grid}>
-            <a href="/posts/About" className={styles.card}>
+            <Link href="/posts/About"><a className={styles.card}>
               <h3>園について</h3>
-            </a>
-            <a href="/posts/About" className={styles.card}>
+            </a></Link>
+            <Link href="/posts/DailySchedule"><a className={styles.card}>
               <h3>1日の流れ</h3>
-            </a>
-            <a href="/posts/About" className={styles.card}>
+            </a></Link>
+            <Link href="/posts/FacilityIntroduction"><a className={styles.card}>
               <h3>施設紹介</h3>
-            </a>
-            <a href="/posts/About" className={styles.card}>
+            </a></Link>
+            <Link href="/posts/Documents"><a className={styles.card}>
               <h3>申請書類</h3>
-            </a>
-            <a href="/posts/About" className={styles.card}>
+            </a></Link>
+            <Link href="/posts/Fee"><a className={styles.card}>
               <h3>料金表</h3>
-            </a>
-            <a href="/posts/About" className={styles.card}>
+            </a></Link>
+            <Link href="/posts/Map"><a className={styles.card}>
               <h3>地図</h3>
-            </a>
-            <a href="/posts/About" className={styles.card}>
+            </a></Link>
+            <Link href="/posts/Logo"><a className={styles.card}>
               <h3>ロゴについて</h3>
-            </a>
-            <a href="/posts/About" className={styles.card}>
+            </a></Link>
+            <Link href="/posts/Recruitment"><a className={styles.card}>
               <h3>採用</h3>
-            </a>
+            </a></Link>
           </div>
         </main>
         　　　

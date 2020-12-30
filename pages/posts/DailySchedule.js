@@ -2,14 +2,14 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 
-const About = () => {
+const DailySchedule = () => {
   return (
     <Layout>
       <Head>
-        <title>園について | しのはら保育園</title>
+        <title>一日のながれ | しのはら保育園</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>須恵スマートIC前保育園について</h1>
+      <h1>一日のながれ</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt
         modi placeat quam corrupti architecto eveniet, ab impedit perspiciatis
@@ -34,4 +34,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default DailySchedule;
