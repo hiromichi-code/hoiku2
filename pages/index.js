@@ -11,49 +11,49 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className={styles.main}>
-          <h1 className={styles.title}>須恵スマートIC前保育園</h1>
-
-          <p className={styles.description}>内閣府所管企業主導型保育園</p>
-
+          <div className={styles.navbar}>
+            <ul>
+              <Link href="/posts/DailySchedule">
+                <a className={styles.nav}>
+                  <li>1日の流れ</li>
+                </a>
+              </Link>
+              <Link href="/posts/FacilityIntroduction">
+                <a className={styles.nav}>
+                  <li>施設紹介</li>
+                </a>
+              </Link>
+              <Link href="/posts/Documents">
+                <a className={styles.nav}>
+                  <li>申請書類</li>
+                </a>
+              </Link>
+              <Link href="/posts/Fee">
+                <a className={styles.nav}>
+                  <li>料金表</li>
+                </a>
+              </Link>
+              <Link href="/posts/Map">
+                <a className={styles.nav}>
+                  <li>地図</li>
+                </a>
+              </Link>
+              <Link href="/posts/Recruitment">
+                <a className={styles.nav}>
+                  <li>採用</li>
+                </a>
+              </Link>
+            </ul>
+          </div>
           <div className={styles.grid}>
-            <Link href="/posts/About"><a className={styles.card}>
-              <h3>園について</h3>
-            </a></Link>
-            <Link href="/posts/DailySchedule"><a className={styles.card}>
-              <h3>1日の流れ</h3>
-            </a></Link>
-            <Link href="/posts/FacilityIntroduction"><a className={styles.card}>
-              <h3>施設紹介</h3>
-            </a></Link>
-            <Link href="/posts/Documents"><a className={styles.card}>
-              <h3>申請書類</h3>
-            </a></Link>
-            <Link href="/posts/Fee"><a className={styles.card}>
-              <h3>料金表</h3>
-            </a></Link>
-            <Link href="/posts/Map"><a className={styles.card}>
-              <h3>地図</h3>
-            </a></Link>
-            <Link href="/posts/Logo"><a className={styles.card}>
-              <h3>ロゴについて</h3>
-            </a></Link>
-            <Link href="/posts/Recruitment"><a className={styles.card}>
-              <h3>採用</h3>
-            </a></Link>
+            <h1 className={styles.title}>須恵スマートIC前保育園</h1>
+
+            <p className={styles.description}>内閣府所管企業主導型保育園</p>
           </div>
         </main>
         　　　
-        <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{" "}
-            <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-          </a>
-        </footer>
       </div>
+      <footer className={styles.footer}></footer>
     </div>
   );
 }
