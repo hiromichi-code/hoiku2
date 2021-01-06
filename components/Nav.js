@@ -10,7 +10,7 @@ const Nav = () => {
       <ul>
         <Link href="/posts/FacilityIntroduction">
           <a className={styles.nav}>
-            <li>施設紹介</li>
+            <li>園について</li>
           </a>
         </Link>
         <Link href="/posts/DailySchedule">
@@ -39,6 +39,9 @@ const Nav = () => {
           </a>
         </Link>
       </ul>
+      <div className={styles.line}>
+        <p>LINEで問い合わせる</p>
+      </div>
     </div>
   );
 };

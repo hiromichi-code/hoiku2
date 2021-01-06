@@ -5,13 +5,15 @@ import Nav from "../components/Nav";
 export default function Home() {
   return (
     <>
-      <div className={styles.container}>
-        <Head>
-          <title>しのはら保育園</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+      <Head>
+        <title>しのはら保育園</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className={styles.header}>
+        <Nav />
+      </div>
+      <div className={styles.containerMain}>
         <div className={styles.main}>
-          <Nav />
           <div className={styles.grid}>
             <h1 className={styles.title}>
               自分を信じ自立した子ども
@@ -23,15 +25,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.container}>
-        <div className={styles.about}>
-          
-        </div>
+      <div className={styles.containerAbout}>
+        <div className={styles.about}></div>
       </div>
-      <div className={styles.container}>
-        <div className={styles.logo}>
-
-        </div>
+      <div className={styles.containerLogo}>
+        <div className={styles.logo}></div>
       </div>
       <footer className={styles.footer}></footer>
     </>
