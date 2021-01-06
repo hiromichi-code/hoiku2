@@ -4,6 +4,9 @@ import styles from "../styles/Home.module.css";
 const Nav = () => {
   return (
     <div className={styles.navbar}>
+      <div className={styles.logoImg}>
+        <p>ロゴ</p>
+      </div>
       <ul>
         <Link href="/posts/FacilityIntroduction">
           <a className={styles.nav}>
