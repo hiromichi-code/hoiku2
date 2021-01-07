@@ -6,7 +6,7 @@ const DailySchedule = () => {
   return (
     <Layout>
       <Head>
-        <title>一日のながれ | しのはら保育園</title>
+        <title>一日のながれ | 須恵ふたば保育園</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>一日のながれ</h1>

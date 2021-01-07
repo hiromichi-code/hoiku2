@@ -6,7 +6,7 @@
   background-image: url('../public/images/hoiku.jpg');
   background-size: cover;
 }
-.containerAbout {
+.containerMap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,27 +20,33 @@
   flex-direction: column;
   background-color: green;
 }
-
-.main {
-  height: 95vh;
-  padding: 2rem 0;
-  width: 1008px;
+.containerFotter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.about {
+.main {
+  height: 89vh;
+  padding: 2rem 0;
+  width: 1024px;
+}
+
+.map {
   height: 100vh;
   padding: 2rem 0;
-  width: 1008px;
+  width: 1024px;
 }
 
 .logo {
   height: 100vh;
   padding: 2rem 0;
-  width: 1008px;
+  width: 1024px;
 }
 
 .footer {
-  width: 100%;
+  width: 1024px;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -54,19 +60,22 @@
 }
 
 .title {
-  margin: 352px 0 0 0;
-  line-height: 1.55;
-  font-size: 1.7rem;
+  margin: 400px 0 0 0;
+  line-height: 2.5;
+  font-size: 1.3rem;
   text-align: left;
   font-weight: bold;
   box-shadow: 4px 4px 4px rgba(0,0,0,.2);
-  border: 1px solid gray;
   border-radius: 8px;
   padding: 32px 64px;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255,255,255,.7);
 }
-
+.headerOut{
+  width: 100%;
+  background-color: rgba(255,255,255,.7);
+}
 .header {
+  padding: 8px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,21 +91,22 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  width: 1008px;
-  /* padding: 16px 0; */
+  width: 1024px;
 }
 
 .navbar ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .nav {
   color: black;
   list-style: none;
-  margin-left: 32px;
+  margin: 0 16px;
 }
 
 .nav:hover,
@@ -107,18 +117,32 @@
 }
 
 .logoImg p {
-  width: 160px;
-  background-color: pink;
-  text-align: center;
-  padding: 8px 16px;
-}
-
-.line p {
   width: 192px;
-  background-color: pink;
+  background-color: #00B900;
   text-align: center;
   padding: 8px 16px;
   color: #fff;
+}
+.line {
+  margin: auto 0;
+}
+.line button {
+  width: 192px;
+  background-color:  #00B900;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px 16px;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+.line button:hover {
+  cursor: pointer;
+  background-color: pink;
+}
+.line button:active {
+  background-color: gray;
 }
 
 @media (max-width: 600px) {

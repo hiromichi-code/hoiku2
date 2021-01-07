@@ -6,7 +6,7 @@ const Recruitment = () => {
   return (
     <Layout>
       <Head>
-        <title>採用 | しのはら保育園</title>
+        <title>採用 | 須恵ふたば保育園</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>採用</h1>

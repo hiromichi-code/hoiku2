@@ -6,32 +6,39 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>しのはら保育園</title>
+        <title>須恵ふたば保育園</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.header}>
-        <Nav />
-      </div>
       <div className={styles.containerMain}>
+        <div className={styles.headerOut}>
+          <div className={styles.header}>
+            <Nav />
+          </div>
+        </div>
         <div className={styles.main}>
           <div className={styles.grid}>
             <h1 className={styles.title}>
               自分を信じ自立した子ども
               <br />
               思いやりがあり明るく元気な子ども
-              <br />
-              の育成を目指し保育を行います
             </h1>
           </div>
         </div>
       </div>
-      <div className={styles.containerAbout}>
-        <div className={styles.about}></div>
+      <div className={styles.containerMap}>
+        <div className={styles.map}></div>
       </div>
       <div className={styles.containerLogo}>
         <div className={styles.logo}></div>
       </div>
-      <footer className={styles.footer}></footer>
+      <div className={styles.containerFotter}>
+        <footer className={styles.footer}>
+          <p>須恵ふたば保育園</p>
+          <div className={styles.line}>
+            <button>LINEでお問い合わせ</button>
+          </div>
+        </footer>
+      </div>
     </>
   );
 }

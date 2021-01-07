@@ -6,7 +6,7 @@ const Documents = () => {
   return (
     <Layout>
       <Head>
-        <title>申請書類 | しのはら保育園</title>
+        <title>書類ダウンロード | 須恵ふたば保育園</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>申請書類</h1>

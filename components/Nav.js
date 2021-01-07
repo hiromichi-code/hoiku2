@@ -8,7 +8,7 @@ const Nav = () => {
         <p>ロゴ</p>
       </div>
       <ul>
-        <Link href="/posts/FacilityIntroduction">
+        <Link href="/posts/About">
           <a className={styles.nav}>
             <li>園について</li>
           </a>
@@ -20,17 +20,12 @@ const Nav = () => {
         </Link>
         <Link href="/posts/Documents">
           <a className={styles.nav}>
-            <li>申請書類</li>
+            <li>書類ダウンロード</li>
           </a>
         </Link>
         <Link href="/posts/Fee">
           <a className={styles.nav}>
             <li>料金表</li>
-          </a>
-        </Link>
-        <Link href="/posts/Map">
-          <a className={styles.nav}>
-            <li>地図</li>
           </a>
         </Link>
         <Link href="/posts/Recruitment">
@@ -40,7 +35,7 @@ const Nav = () => {
         </Link>
       </ul>
       <div className={styles.line}>
-        <p>LINEで問い合わせる</p>
+        <button>LINEでお問い合わせ</button>
       </div>
     </div>
   );

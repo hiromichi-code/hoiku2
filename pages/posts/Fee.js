@@ -6,7 +6,7 @@ const Fee = () => {
   return (
     <Layout>
       <Head>
-        <title>料金表 | しのはら保育園</title>
+        <title>料金表 | 須恵ふたば保育園</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>料金表</h1>
