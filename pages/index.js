@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Nav from "../components/Nav";
-import Fotter from '../components/Fotter';
+import Fotter from "../components/Fotter";
 
 export default function Home() {
   return (

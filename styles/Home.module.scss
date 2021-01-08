@@ -1,8 +1,27 @@
-.containerMain {
+@mixin flexAll {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin baseWidth {
+  width: 1024px;
+}
+@mixin mpZero {
+  margin: 0;
+  padding: 0;
+}
+@mixin blackFont {
+  color: #333333;
+}
+
+.containerMain {
+  @include flexAll;
   background-image: url("../public/images/hoiku.jpg");
   background-size: cover;
   .headerOut {
@@ -10,21 +29,21 @@
     background-color: rgba(255, 255, 255, 0.7);
     .header {
       padding: 8px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex;
     }
   }
   .main {
     height: 89vh;
     padding: 2rem 0;
-    width: 1024px;
+    @include baseWidth;
     .grid {
       display: flex;
       align-items: flex-end;
+      justify-content: center;
       flex-direction: column;
       width: 100%;
       .title {
+        @include blackFont;
         margin: 400px 0 0 0;
         line-height: 2.5;
         font-size: 1.3rem;
@@ -38,47 +57,37 @@
     }
   }
 }
+
 .containerMap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flexAll;
   background-color: pink;
   .map {
     height: 100vh;
     padding: 2rem 0;
-    width: 1024px;
+    @include baseWidth;
   }
 }
 
 .containerLogo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flexAll;
   background-color: green;
   .logo {
     height: 100vh;
     padding: 2rem 0;
-    width: 1024px;
+    @include baseWidth;
   }
 }
 
 .containerFotter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flexAll;
   .footer {
-    width: 1024px;
+    @include baseWidth;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex;
     }
   }
 }
@@ -86,7 +95,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  width: 1024px;
+  @include baseWidth;
   p {
     width: 192px;
     background-color: #00b900;
@@ -95,14 +104,11 @@
     color: #fff;
   }
   ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     font-weight: bold;
-    margin: 0;
-    padding: 0;
+    @include mpZero;
     .nav {
-      color: black;
+      @include blackFont;
       list-style: none;
       margin: 0 16px;
       &:hover,
@@ -139,10 +145,6 @@
 
 @media (max-width: 600px) {
   .containerMain {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     background-image: none;
     .main {
       height: 89vh;
@@ -157,10 +159,6 @@
     }
   }
   .containerMap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     background-color: pink;
     .map {
       height: 100vh;
@@ -169,10 +167,6 @@
     }
   }
   .containerLogo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     background-color: green;
     .logo {
       height: 100vh;
@@ -181,10 +175,6 @@
     }
   }
   .containerFotter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     .footer {
       display: none;
     }
