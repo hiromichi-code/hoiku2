@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.logoImg}>
-        <p>ロゴ</p>
+        <Link href='/'><p>ロゴ</p></Link>
       </div>
       <ul>
         <Link href="/posts/About">
@@ -20,7 +20,7 @@ const Nav = () => {
         </Link>
         <Link href="/posts/Documents">
           <a className={styles.nav}>
-            <li>書類ダウンロード</li>
+            <li>書式ダウンロード</li>
           </a>
         </Link>
         <Link href="/posts/Fee">

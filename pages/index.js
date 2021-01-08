@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Nav from "../components/Nav";
+import Fotter from '../components/Fotter';
 
 export default function Home() {
   return (
@@ -31,14 +32,7 @@ export default function Home() {
       <div className={styles.containerLogo}>
         <div className={styles.logo}></div>
       </div>
-      <div className={styles.containerFotter}>
-        <footer className={styles.footer}>
-          <p>須恵ふたば保育園</p>
-          <div className={styles.line}>
-            <button>LINEでお問い合わせ</button>
-          </div>
-        </footer>
-      </div>
+      <Fotter />
     </>
   );
 }
