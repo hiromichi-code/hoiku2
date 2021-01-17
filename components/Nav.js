@@ -5,27 +5,29 @@ const Nav = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.logoImg}>
-        <Link href='/'><p>ロゴ</p></Link>
+        <Link href="/">
+          <p>ロゴ</p>
+        </Link>
       </div>
       <ul>
-        <Link href="/posts/About">
+        <Link href="/#About">
           <a className={styles.nav}>
             <li>園について</li>
           </a>
         </Link>
-        <Link href="/posts/DailySchedule">
+        <Link href="/#DailySchedule">
           <a className={styles.nav}>
             <li>1日のながれ</li>
+          </a>
+        </Link>
+        <Link href="/#Fee">
+          <a className={styles.nav}>
+            <li>料金表</li>
           </a>
         </Link>
         <Link href="/posts/Documents">
           <a className={styles.nav}>
             <li>書式ダウンロード</li>
-          </a>
-        </Link>
-        <Link href="/posts/Fee">
-          <a className={styles.nav}>
-            <li>料金表</li>
           </a>
         </Link>
         <Link href="/posts/Recruitment">

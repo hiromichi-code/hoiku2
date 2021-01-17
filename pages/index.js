@@ -26,11 +26,22 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.containerMap}>
-        <div className={styles.map}></div>
+      <div className={styles.containerAbout} id="About">
+        <div className={styles.about}></div>
       </div>
-      <div className={styles.containerLogo}>
-        <div className={styles.logo}></div>
+      <div className={styles.containerDailySchedule} id="DailySchedule">
+        <div className={styles.dailySchedule}>
+          <div className={styles.backToHome}>
+            <a href="/">▲Topに戻る</a>
+          </div>
+        </div>
+      </div>
+      <div className={styles.containerFee} id="Fee">
+        <div className={styles.Fee}>
+          <div className={styles.backToHome}>
+            <a href="/">▲Topに戻る</a>
+          </div>
+        </div>
       </div>
       <Fotter />
     </>

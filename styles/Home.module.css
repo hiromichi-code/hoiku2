@@ -37,7 +37,6 @@
 .containerMain .main {
   height: 89vh;
   padding: 2rem 0;
-  width: 1024px;
 }
 
 .containerMain .main .grid {
@@ -71,7 +70,7 @@
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.containerMap {
+.containerAbout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,13 +87,12 @@
   background-color: pink;
 }
 
-.containerMap .map {
-  height: 100vh;
+.containerAbout .about {
+  height: 200vh;
   padding: 2rem 0;
-  width: 1024px;
 }
 
-.containerLogo {
+.containerDailySchedule {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,10 +109,32 @@
   background-color: green;
 }
 
-.containerLogo .logo {
-  height: 100vh;
+.containerDailySchedule .dailySchedule {
+  height: 200vh;
   padding: 2rem 0;
-  width: 1024px;
+  @in;
+}
+
+.containerFee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: blue;
+}
+
+.containerFee .Fee {
+  height: 200vh;
+  padding: 2rem 0;
 }
 
 .containerFotter {

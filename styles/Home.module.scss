@@ -19,9 +19,22 @@
 @mixin blackFont {
   color: #333333;
 }
+@mixin home {
+  .backToHome {
+    text-align: center;
+    margin: 0;
+    @include blackFont;
+    a {
+      padding: 16px;
+      &:hover {
+        @include linkFont;
+      }
+    }
+  }
+}
 
 .containerMain {
-  @include flexAll;
+  @include flex;
   background-image: url("../public/images/hoiku.jpg");
   background-size: cover;
   .headerOut {
@@ -34,14 +47,14 @@
   }
   .main {
     height: 89vh;
-    padding: 2rem 0;
-    @include baseWidth;
+    // width: 1024px;
     .grid {
+      width: 100%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       flex-direction: column;
-      width: 100%;
+      @include baseWidth;
       .title {
         @include blackFont;
         margin: 400px 0 0 0;
@@ -58,28 +71,40 @@
   }
 }
 
-.containerMap {
+.containerAbout {
   @include flexAll;
   background-color: pink;
-  .map {
+  .about {
     height: 100vh;
     padding: 2rem 0;
     @include baseWidth;
   }
 }
 
-.containerLogo {
-  @include flexAll;
+.containerDailySchedule {
+  @include flex;
   background-color: green;
-  .logo {
+  .dailySchedule {
     height: 100vh;
     padding: 2rem 0;
+    @include home;
+    @include baseWidth;
+  }
+}
+
+.containerFee {
+  @include flex;
+  background-color: blue;
+  .Fee {
+    height: 100vh;
+    padding: 2rem 0;
+    @include home;
     @include baseWidth;
   }
 }
 
 .containerFotter {
-  @include flexAll;
+  @include flex;
   .footer {
     @include baseWidth;
     height: 100px;
